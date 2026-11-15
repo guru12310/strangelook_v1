@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101014">
+  <meta name="description" content="StrangeLook — make plans, meet people, go together.">
+  <title>StrangeLook — Go together, naturally.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-mark">S</span><span>strange<span
+          class="brand-light">look</span></span></a>
+    <nav class="desktop-nav"><a href="#discover">Discover</a><a href="#how">How it works</a><a href="#safety">Safety</a>
+    </nav>
+    <div class="top-actions"><button class="btn btn-quiet" id="loginBtn">Log in</button><button class="btn btn-primary"
+        id="postTopBtn">Create a plan <span>↗</span></button><button class="menu-btn" id="menuBtn"
+        aria-label="Open menu">☰</button></div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> A better way to make plans</div>
+        <h1>Good plans.<br><em>Unexpected</em> people.</h1>
+        <p class="hero-sub">Going somewhere anyway? Find someone nearby who'd enjoy the same experience. You choose who
+          joins. You stay in control.</p>
+        <div class="hero-actions"><button class="btn btn-primary btn-large" id="heroPostBtn">Create your first plan
+            <span>↗</span></button><a class="text-link" href="#discover">Explore plans <span>↓</span></a></div>
+        <div class="hero-proof">
+          <div class="avatar-stack"><span>R</span><span>M</span><span>A</span><span>+</span></div>
+          <div><strong>Meet on your terms</strong><small>Request first. You decide.</small></div>
+        </div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="hero-card main-ticket">
+          <div class="ticket-top"><span class="ticket-tag">TONIGHT · CHENNAI</span><span class="ticket-dots">•••</span>
+          </div>
+          <div class="ticket-icon">✦</div>
+          <h3>One more seat<br>for a good story.</h3>
+          <p>Sometimes the best part of going out is who you meet there.</p>
+          <div class="ticket-bottom"><span>YOUR PLAN, YOUR CALL</span><span class="ticket-arrow">↗</span></div>
+        </div>
+        <div class="floating-note note-one"><span class="note-icon">🎬</span>
+          <div><b>Movie night</b><small>Requests are reviewed</small></div>
+        </div>
+        <div class="floating-note note-two"><span class="note-icon">☕</span>
+          <div><b>Coffee & conversation</b><small>Near you · Public place</small></div>
+        </div>
+        <div class="sparkle">✳</div>
+      </div>
+    </section>
+    <section class="trust-strip"><span>BUILT AROUND YOUR CHOICE</span>
+      <div><b>01</b> Request to join</div>
+      <div><b>02</b> Review the profile</div>
+      <div><b>03</b> Accept only if comfortable</div>
+    </section>
+    <section class="discover-section" id="discover">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">THE COMMUNITY BOARD</div>
+          <h2>Plans worth <em>showing up for.</em></h2>
+          <p>Browse public plans. Send a request only when it feels right.</p>
+        </div><button class="btn btn-outline" id="filterBtn">☷ Filters</button>
+      </div>
+      <div class="filter-row"><button class="chip active" data-category="All">All plans</button><button class="chip"
+          data-category="Movies">🎬 Movies</button><button class="chip" data-category="Food">🍜 Food &
+          cafés</button><button class="chip" data-category="Events">🎟 Events</button><button class="chip"
+          data-category="Outdoors">🌿 Outdoors</button><button class="chip" data-category="Other">✦ Other</button></div>
+      <div class="plan-grid" id="planGrid">
+        <article class="plan-card">
+          <div class="plan-image movie-bg"><span class="image-label">🎬 MOVIE</span><span class="image-date">TODAY ·
+              7:30 PM</span>
+            <div class="image-art">CINEMA<br><i>after hours</i></div>
+          </div>
+          <div class="plan-content">
+            <div class="plan-meta"><span>📍 VR Chennai, Anna Nagar</span><span class="verified">✓ ID checked</span>
+            </div>
+            <h3>Late show, good company</h3>
+            <p>Watching the new release. Ticket is already booked — just looking for someone to enjoy the movie with.
+            </p>
+            <div class="plan-footer">
+              <div class="host">
+                <div class="host-avatar">K</div>
+                <div><b>Karthik, 26</b><small>Member · Chennai</small></div>
+              </div><button class="btn btn-dark request-demo" data-plan="Late show, good company">Request ↗</button>
+            </div>
+          </div>
+        </article>
+        <article class="plan-card">
+          <div class="plan-image food-bg"><span class="image-label">🍜 FOOD</span><span class="image-date">SAT · 6:00
+              PM</span>
+            <div class="image-art">A TABLE<br><i>for two</i></div>
+          </div>
+          <div class="plan-content">
+            <div class="plan-meta"><span>📍 T. Nagar, Chennai</span><span class="verified">✓ ID checked</span></div>
+            <h3>Trying a new ramen place</h3>
+            <p>Want to try this spot and chat about films, music or anything interesting. Public venue.</p>
+            <div class="plan-footer">
+              <div class="host">
+                <div class="host-avatar avatar-lilac">M</div>
+                <div><b>Meera, 24</b><small>Member · Chennai</small></div>
+              </div><button class="btn btn-dark request-demo" data-plan="Trying a new ramen place">Request ↗</button>
+            </div>
+          </div>
+        </article>
+        <article class="plan-card">
+          <div class="plan-image event-bg"><span class="image-label">🎟 EVENT</span><span class="image-date">SUN · 4:00
+              PM</span>
+            <div class="image-art">LIVE<br><i>sessions</i></div>
+          </div>
+          <div class="plan-content">
+            <div class="plan-meta"><span>📍 Phoenix Marketcity, Chennai</span><span class="verified">✓ ID checked</span>
+            </div>
+            <h3>Indie music afternoon</h3>
+            <p>Going to the live music event. Would be nice to meet another music lover there.</p>
+            <div class="plan-footer">
+              <div class="host">
+                <div class="host-avatar avatar-orange">A</div>
+                <div><b>Arun, 28</b><small>Member · Chennai</small></div>
+              </div><button class="btn btn-dark request-demo" data-plan="Indie music afternoon">Request ↗</button>
+            </div>
+          </div>
+        </article>
+      </div>
+      <p class="demo-note">Preview content for design demonstration. Live plans will load from the backend when
+        connected.</p>
+    </section>
+    <section class="how-section" id="how">
+      <div class="section-heading">
+        <div>
+          <div class="eyebrow">SIMPLE BY DESIGN</div>
+          <h2>You make the plan.<br><em>You make the call.</em></h2>
+        </div>
+      </div>
+      <div class="steps">
+        <div class="step"><span>01</span>
+          <div class="step-icon">✍</div>
+          <h3>Post what you're doing</h3>
+          <p>Share the activity, place, date and time. Add a short note or voice intro. Set who can request.</p>
+        </div>
+        <div class="step"><span>02</span>
+          <div class="step-icon">◎</div>
+          <h3>Review requests</h3>
+          <p>See profiles and verification status. Chat only after you accept a request.</p>
+        </div>
+        <div class="step"><span>03</span>
+          <div class="step-icon">↗</div>
+          <h3>Meet in a public place</h3>
+          <p>Confirm the plan, tell someone you trust, and use the in-app safety tools if needed.</p>
+        </div>
+      </div>
+    </section>
+    <section class="safety-section" id="safety">
+      <div class="safety-copy">
+        <div class="eyebrow">SAFETY IS A FEATURE, NOT A FOOTNOTE</div>
+        <h2>Go with curiosity.<br><em>Keep your boundaries.</em></h2>
+        <p>StrangeLook is designed to help people connect without giving up control. Identity checks reduce uncertainty,
+          but no online verification can guarantee someone's behaviour.</p><a class="text-link"
+          href="#safety-details">Our safety approach ↗</a>
+      </div>
+      <div class="safety-list" id="safety-details">
+        <div><span>✓</span>
+          <section><b>Identity verification</b>
+            <p>Age and identity check before joining the community. Sensitive ID documents should be handled by a
+              trusted verification provider, not displayed publicly.</p>
+          </section>
+        </div>
+        <div><span>✓</span>
+          <section><b>Host approval</b>
+            <p>Requests are private. The plan creator chooses who to accept and can decline or cancel at any time.</p>
+          </section>
+        </div>
+        <div><span>✓</span>
+          <section><b>Report, block & support</b>
+            <p>Block unwanted contact, report unsafe behaviour and preserve relevant incident records securely.</p>
+          </section>
+        </div>
+        <div><span>✓</span>
+          <section><b>Public-meetup guidance</b>
+            <p>Meet in a busy public venue, arrange your own transport and share your plan with someone you trust.</p>
+          </section>
+        </div>
+      </div>
+    </section>
+    <section class="cta-section">
+      <div>
+        <div class="eyebrow">YOUR NEXT PLAN STARTS HERE</div>
+        <h2>Don't wait for the<br><em>group chat.</em></h2>
+      </div><button class="btn btn-primary btn-large" id="bottomPostBtn">Make a plan <span>↗</span></button>
+    </section>
+  </main>
+  <footer><a class="brand" href="#"><span class="brand-mark">S</span><span>strange<span
+          class="brand-light">look</span></span></a><span>© 2026 StrangeLook. Meet thoughtfully.</span>
+    <div><a href="#safety">Safety</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+  </footer>
+
+  <div class="modal-backdrop" id="modalBackdrop" aria-hidden="true">
+    <section class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close"
+        id="modalClose" aria-label="Close">×</button>
+      <div class="eyebrow">STRANGELOOK COMMUNITY</div>
+      <h2 id="modalTitle">Create your plan</h2>
+      <p class="modal-intro">Tell people what you're up to. Your plan is reviewed before it appears publicly.</p>
+      <form id="planForm">
+        <label>What are you planning?<input name="title" required maxlength="100"
+            placeholder="e.g. Movie night at VR Chennai"></label>
+        <div class="form-row"><label>Category<select name="category" required>
+              <option value="Movies">Movies</option>
+              <option value="Food">Food & cafés</option>
+              <option value="Events">Events</option>
+              <option value="Outdoors">Outdoors</option>
+              <option value="Other">Other</option>
+            </select></label><label>City<input name="city" required value="Chennai"></label></div>
+        <label>Public venue / area<input name="venue" required placeholder="Venue name and area"></label>
+        <div class="form-row"><label>Date & time<input name="startsAt" type="datetime-local"
+              required></label><label>Requests close<input name="closesAt" type="datetime-local"></label></div>
+        <label>Describe the plan<textarea name="description" rows="3" maxlength="800"
+            placeholder="What should a potential guest know?"></textarea></label>
+        <div class="ticket-rule"><span>🎟</span>
+          <div><b>Ticket & expenses</b><small>Be clear about who pays. For this plan, the host covers the movie ticket.
+              The guest is not asked to share that ticket cost.</small></div>
+        </div>
+        <label class="check-label"><input type="checkbox" required> I confirm this is a public meetup and agree to the
+          community safety rules.</label>
+        <button class="btn btn-primary btn-large full" type="submit">Publish plan request <span>↗</span></button><small
+          class="form-foot">You need an account and verified identity before a real plan can be published. Demo form
+          sends to the local API.</small>
+      </form>
+    </section>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>
